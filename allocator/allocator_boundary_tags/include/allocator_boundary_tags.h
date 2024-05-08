@@ -72,7 +72,7 @@ private:
 private:
     
     inline std::string get_typename() const noexcept override;
-
+    
 private:
 
     inline static size_t

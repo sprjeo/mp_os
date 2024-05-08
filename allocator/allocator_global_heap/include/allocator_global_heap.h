@@ -13,35 +13,34 @@ class allocator_global_heap final:
 {
 
 private:
-
+    
     logger *_logger;
 
 public:
-
+    
     explicit allocator_global_heap(
-        logger* logger = nullptr);
-
+        logger *logger = nullptr);
+    
 public:
-
+    
     [[nodiscard]] void *allocate(
         size_t value_size,
         size_t values_count) override;
-
+    
     void deallocate(
         void *at) override;
 
 
-private:
 
+private:
+    
     inline logger *get_logger() const override;
 
 private:
-
+    
     inline std::string get_typename() const noexcept override;
 
 public:
-
-
 
 };
 
