@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
+cmake_policy(SET CMP0135 NEW)
 project(mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn)
 
 include(FetchContent)

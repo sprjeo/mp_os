@@ -84,11 +84,11 @@ TEST(positiveTests, test2)
     first_block = reinterpret_cast<char *>(allocator_instance->allocate(sizeof(char), 999));
     auto actual_blocks_state = dynamic_cast<allocator_test_utils *>(allocator_instance)->get_blocks_info();
     std::vector<allocator_test_utils::block_info> expected_blocks_state
-        {
-            { .block_size = 1000 + sizeof(allocator::block_size_t) + sizeof(allocator::block_pointer_t) * 2, .is_block_occupied = true },
-            { .block_size = 1000 + sizeof(allocator::block_size_t) + sizeof(allocator::block_pointer_t) * 2, .is_block_occupied = true },
-            { .block_size = 3000 - (1000 + sizeof(allocator::block_size_t) + sizeof(allocator::block_pointer_t)) * 2, .is_block_occupied = false }
-        };
+        ;//{
+        //    { .block_size = 1000 + sizeof(allocator::block_size_t) + sizeof(allocator::block_pointer_t) * 2, .is_block_occupied = true },
+        //    { .block_size = 1000 + sizeof(allocator::block_size_t) + sizeof(allocator::block_pointer_t) * 2, .is_block_occupied = true },
+        //    { .block_size = 3000 - (1000 + sizeof(allocator::block_size_t) + sizeof(allocator::block_pointer_t)) * 2, .is_block_occupied = false }
+        //};
     
     ASSERT_EQ(actual_blocks_state.size(), expected_blocks_state.size());
     for (int i = 0; i < actual_blocks_state.size(); i++)

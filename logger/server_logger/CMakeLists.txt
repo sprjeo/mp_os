@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
+cmake_policy(SET CMP0135 NEW)
 project(mp_os_lggr_srvr_lggr)
 
 add_subdirectory(tests)

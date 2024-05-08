@@ -61,10 +61,11 @@ std::string logger::severity_to_string(
 
 std::string logger::current_datetime_to_string() noexcept
 {
-    auto time = std::time(nullptr);
-
-    std::ostringstream result_stream;
-    result_stream << std::put_time(std::localtime(&time), "%d.%m.%Y %H:%M:%S");
-
-    return result_stream.str();
+    // auto time = std::time(nullptr);
+    // 
+    // std::ostringstream result_stream;
+    // result_stream << std::put_time(std::localtime(&time), "%d.%m.%Y %H:%M:%S");
+    // 
+    // return result_stream.str();
+    return "";
 }

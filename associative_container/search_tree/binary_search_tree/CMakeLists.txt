@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
+cmake_policy(SET CMP0135 NEW)
 project(mp_os_assctv_cntnr_srch_tr_bnr_srch_tr)
 
 add_subdirectory(AVL_tree)
@@ -13,6 +14,10 @@ target_include_directories(
         mp_os_assctv_cntnr_srch_tr_bnr_srch_tr
         PUBLIC
         ./include)
+target_link_libraries(
+        mp_os_assctv_cntnr_srch_tr_bnr_srch_tr
+        PUBLIC
+        mp_os_cmmn)
 target_link_libraries(
         mp_os_assctv_cntnr_srch_tr_bnr_srch_tr
         PUBLIC

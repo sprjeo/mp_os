@@ -24,7 +24,7 @@ class search_tree:
 
 public:
     
-    struct __attribute__((unused)) common_node
+    struct common_node
     {
     
     public:

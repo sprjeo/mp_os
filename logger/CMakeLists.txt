@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
+cmake_policy(SET CMP0135 NEW)
 project(mp_os_lggr
         VERSION 1.0
         DESCRIPTION "logger libraries"

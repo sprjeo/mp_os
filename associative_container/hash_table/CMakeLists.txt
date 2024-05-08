@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
+cmake_policy(SET CMP0135 NEW)
 project(mp_os_assctv_cntnr_hsh_tbl)
 
 add_subdirectory(tests)

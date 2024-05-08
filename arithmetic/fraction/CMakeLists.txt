@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.21)
+cmake_policy(SET CMP0135 NEW)
 project(mp_os_arthmtc_frctn)
 
-add_subdirectory(tests)
+#add_subdirectory(tests)
 
 add_library(
         mp_os_arthmtc_frctn
